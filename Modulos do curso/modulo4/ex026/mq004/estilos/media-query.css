@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/* Todas as demias mídias */
+
+/* Tipical Device Breskponints 
+Pequenas Telas: até 600px;
+Celular: de 600ps até 768px;
+Tablet: de 768ps até 992px;
+Desktop: de 992px até 1200px;
+Grandes Telas: > 1200px
+*/
+
+/*impressão*/
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../img/back-print.jpg);
+    } 
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do aluno Renan Albuquerque';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#a {
+        display: none;
+    }
+    
+    img#b {
+        display: none;
+    }
+    
+    img#c {
+        display: block;
+    }
+    
+    img#d {
+        display: none;
+    }
+    
+    img#e {
+        display: none;
+    }
+    
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../img/back-tablet.jpg);
+    }
+
+    img#a {
+        display: none;
+    }
+    
+    img#b {
+        display: block;
+    }
+    
+    img#c {
+        display: none;
+    }
+    
+    img#d {
+        display: none;
+    }
+    
+    img#e {
+        display: none;
+    }
+    
+}
+
+/*desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../img/back-pc.jpg);
+    }
+
+    
+    img#a {
+        display: none;
+    }
+    
+    img#b {
+        display: none;
+    }
+    
+    img#c {
+        display: none;
+    }
+    
+    img#d {
+        display: block;
+    }
+    
+    img#e {
+        display: none;
+    }
+    
+}
+
+/*grandes telas*/
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../img/back-tv.jpg);
+    }
+
+    img#a {
+        display: none;
+    }
+    
+    img#b {
+        display: none;
+    }
+    
+    img#c {
+        display: none;
+    }
+    
+    img#d {
+        display: none;
+    }
+    
+    img#e {
+        display: block;
+    }
+}
+
+

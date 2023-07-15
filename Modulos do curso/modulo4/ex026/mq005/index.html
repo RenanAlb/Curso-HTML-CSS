@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a href="">Produtos</a></li>
+                <li><a href="">Sobre</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse autem fugit magni voluptatem suscipit officia labore nobis quia soluta illum nostrum possimus, qui pariatur praesentium itaque quidem numquam in consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque ut, accusamus tempora tempore rerum ex aliquid temporibus incidunt, laborum dignissimos ipsa officia consequatur obcaecati aut facere asperiores quis maxime nulla.</p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem impedit quisquam, quis fugiat corrupti cum ipsa vitae nihil enim quidem cumque in pariatur accusamus sint aliquam maxime praesentium qui. Aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. At nobis aut temporibus totam? Natus deleniti ratione provident atque optio odit sunt minima quis, cum id voluptatum quia, possimus, similique assumenda?
+            </p>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem impedit quisquam, quis fugiat corrupti cum ipsa vitae nihil enim quidem cumque in pariatur accusamus sint aliquam maxime praesentium qui. Aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. At nobis aut temporibus totam? Natus deleniti ratione provident atque optio odit sunt minima quis, cum id voluptatum quia, possimus, similique assumenda?
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem impedit quisquam, quis fugiat corrupti cum ipsa vitae nihil enim quidem cumque in pariatur accusamus sint aliquam maxime praesentium qui. Aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. At nobis aut temporibus totam? Natus deleniti ratione provident atque optio odit sunt minima quis, cum id voluptatum quia, possimus, similique assumenda?
+            </p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
